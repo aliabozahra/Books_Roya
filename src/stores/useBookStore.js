@@ -1,5 +1,4 @@
 import { create } from 'zustand';
-import axios from 'axios';
 import image from "../components/imges/Qe8jdF_1754296241.png"
 
 export const useBookStore = create((set, get) => ({
@@ -22,102 +21,73 @@ export const useBookStore = create((set, get) => ({
     { step: 6, title: 'التسليم النهائي', description: 'تسليم الكتاب جاهز للطباعة والنشر' }
   ],
 
-  
-
+  // بدل الـ Axios بخطوة مباشرة
   fetchBooks: async () => {
-    try {
-      set({ loading: true });
-      const response = await axios?.get('/api/books');
-      const data = response?.data;
-
-      set({ books: Array.isArray(data) ? data : [] });
-    } catch (error) {
-      console.error('Error fetching books:', error);
-      // Mock data fallback
-      set({
-        books: [
-    { 
-      id: 1, 
-      title: 'رحلة في عالم الأدب', 
-      author: 'أحمد محمد', 
-      cover: image, 
-      description: 'كتاب يأخذك في رحلة شيقة عبر عالم الأدب العربي' 
-    },
-    { 
-      id: 2, 
-      title: 'فن الإدارة الحديثة', 
-      author: 'سارة أحمد', 
-      cover: image, 
-      description: 'دليلك الشامل لإتقان فنون الإدارة المعاصرة' 
-    },
-    { 
-      id: 3, 
-      title: 'تاريخ الحضارة العربية', 
-      author: 'محمد علي', 
-      cover: image, 
-      description: 'استكشاف عميق لتاريخ الحضارة العربية وإنجازاتها' 
-    }
-  ]
-      });
-    } finally {
-      set({ loading: false });
-    }
+    set({ loading: true });
+    set({
+      books: [
+        { 
+          id: 1, 
+          title: 'رحلة في عالم الأدب', 
+          author: 'أحمد محمد', 
+          cover: image, 
+          description: 'كتاب يأخذك في رحلة شيقة عبر عالم الأدب العربي' 
+        },
+        { 
+          id: 2, 
+          title: 'فن الإدارة الحديثة', 
+          author: 'سارة أحمد', 
+          cover: image, 
+          description: 'دليلك الشامل لإتقان فنون الإدارة المعاصرة' 
+        },
+        { 
+          id: 3, 
+          title: 'تاريخ الحضارة العربية', 
+          author: 'محمد علي', 
+          cover: image, 
+          description: 'استكشاف عميق لتاريخ الحضارة العربية وإنجازاتها' 
+        }
+      ]
+    });
+    set({ loading: false });
   },
-
-
 
   fetchTestimonials: async () => {
-    try {
-      set({ loading: true });
-      const response = await axios?.get('/api/testimonials');
-      const data = response?.data;
-
-      set({ testimonials: Array.isArray(data) ? data : [] });
-    } catch (error) {
-      console.error('Error fetching testimonials:', error);
-      // Mock data fallback
-      set({
-        testimonials: [
-          {
-            id: 1,
-            name: 'د. خالد الأحمد',
-            role: 'أستاذ جامعي',
-            content: 'فريق محترف ومتميز، ساعدوني في إنجاز كتابي بأعلى جودة ممكنة. النتيجة فاقت توقعاتي.',
-            rating: 5,
-            avatar: '/api/placeholder/80/80'
-          },
-          {
-            id: 2,
-            name: 'فاطمة السعد',
-            role: 'كاتبة ومؤلفة',
-            content: 'تجربة رائعة من البداية حتى النهاية. الفريق محترف والنتيجة النهائية مذهلة.',
-            rating: 5,
-            avatar: '/api/placeholder/80/80'
-          },
-          {
-            id: 3,
-            name: 'عمر التميمي',
-            role: 'رجل أعمال',
-            content: 'أنصح بشدة بالتعامل مع هذا الفريق. احترافية عالية والتزام بالمواعيد.',
-            rating: 5,
-            avatar: '/api/placeholder/80/80'
-          }
-        ]
-      });
-    } finally {
-      set({ loading: false });
-    }
+    set({ loading: true });
+    set({
+      testimonials: [
+        {
+          id: 1,
+          name: 'د. خالد الأحمد',
+          role: 'أستاذ جامعي',
+          content: 'فريق محترف ومتميز، ساعدوني في إنجاز كتابي بأعلى جودة ممكنة. النتيجة فاقت توقعاتي.',
+          rating: 5,
+          avatar: '/api/placeholder/80/80'
+        },
+        {
+          id: 2,
+          name: 'فاطمة السعد',
+          role: 'كاتبة ومؤلفة',
+          content: 'تجربة رائعة من البداية حتى النهاية. الفريق محترف والنتيجة النهائية مذهلة.',
+          rating: 5,
+          avatar: '/api/placeholder/80/80'
+        },
+        {
+          id: 3,
+          name: 'عمر التميمي',
+          role: 'رجل أعمال',
+          content: 'أنصح بشدة بالتعامل مع هذا الفريق. احترافية عالية والتزام بالمواعيد.',
+          rating: 5,
+          avatar: '/api/placeholder/80/80'
+        }
+      ]
+    });
+    set({ loading: false });
   },
-
-
-
- 
 }));
- 
 
-export  const useModal = create((set) => ({
+export const useModal = create((set) => ({
   statModal: false,
   closemodal: () => set({ statModal: false }),
   openmodal: () => set({ statModal: true }),
 }));
-

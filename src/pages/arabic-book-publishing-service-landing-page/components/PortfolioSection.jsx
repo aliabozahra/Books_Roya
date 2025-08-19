@@ -326,7 +326,7 @@ const PortfolioSection = () => {
         </motion.div>
       </div>
       {/* Custom Swiper Styles */}
-      <style jsx global>{`
+      <style global>{`
         .portfolio-swiper .swiper-navigation-prev,
         .portfolio-swiper .swiper-navigation-next {
           color: #f79433 !important;

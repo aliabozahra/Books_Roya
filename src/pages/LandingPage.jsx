@@ -92,7 +92,7 @@ const LandingPage = () => {
       </main>
 
       {/* Scroll to top functionality */}
-      <style jsx>{`
+      <style>{`
         html {
           scroll-behavior: smooth;
         }

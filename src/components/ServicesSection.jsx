@@ -7,12 +7,9 @@ import logo from "./imges/hero2.webp";
 import { useModal } from 'stores/useBookStore';
 
 const AboutSection = () => {
-   const { statModal, openmodal } = useModal();
+   const {  openmodal } = useModal();
 
-  const handleOrderNow = () => {
-    openmodal(); // فتح المودال
   
-  };
 
   return (
    <section className="bg-[#e9f6fc] py-20">

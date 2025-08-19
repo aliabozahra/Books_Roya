@@ -280,7 +280,7 @@ const TestimonialsSection = () => {
         </motion.div>
       </div>
       {/* Custom Swiper Styles */}
-      <style jsx global>{`
+      <style  global>{`
         .testimonials-swiper .swiper-pagination-bullet {
           background: #f79433 !important;
           opacity: 0.3 !important;

@@ -5,6 +5,7 @@ import { FaPalette } from 'react-icons/fa';
 import { useBookStore, useModal } from 'stores/useBookStore';
 
 const WhyUsSection = () => {
+  const { requestQuote } = useBookStore();
      const {  openmodal } = useModal();
   
 

@@ -167,7 +167,7 @@ const PortfolioSection = () => {
         </motion.div>
       </div>
 
-      <style jsx>{`
+      <style>{`
         .portfolio-swiper .swiper-pagination-bullet {
           background-color: #217abe;
           opacity: 0.5;

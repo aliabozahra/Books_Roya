@@ -94,7 +94,7 @@ const TestimonialsSection = () => {
       </div>
 
       {/* ستايل لأسهم وبوليتس الباجينيشن */}
-      <style jsx>{`
+      <style >{`
         .swiper-pagination-bullet {
           background-color: #217abe;
           opacity: 0.5;
