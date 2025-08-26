@@ -131,10 +131,10 @@ const TestimonialsCarousel = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="font-arabic-sans text-3xl md:text-4xl font-bold text-foreground mb-6">
+          <h2 className="  text-3xl md:text-4xl font-bold text-foreground mb-6">
             ماذا يقول عملاؤنا عنا؟
           </h2>
-          <p className="font-arabic-sans text-lg text-muted-foreground max-w-3xl mx-auto">
+          <p className="  text-lg text-muted-foreground max-w-3xl mx-auto">
             قصص نجاح حقيقية من مؤلفين حولنا أحلامهم إلى كتب منشورة ومؤثرة
           </p>
         </motion.div>
@@ -162,7 +162,7 @@ const TestimonialsCarousel = () => {
                     </div>
 
                     {/* Testimonial Text */}
-                    <blockquote className="font-arabic-sans text-lg leading-relaxed text-foreground">
+                    <blockquote className="  text-lg leading-relaxed text-foreground">
                       "{testimonials?.[currentIndex]?.testimonial}"
                     </blockquote>
 
@@ -174,13 +174,13 @@ const TestimonialsCarousel = () => {
                         className="w-16 h-16 rounded-full object-cover border-2 border-primary/20"
                       />
                       <div>
-                        <h4 className="font-arabic-sans text-lg font-semibold text-foreground">
+                        <h4 className="  text-lg font-semibold text-foreground">
                           {testimonials?.[currentIndex]?.name}
                         </h4>
-                        <p className="font-arabic-sans text-sm text-muted-foreground">
+                        <p className="  text-sm text-muted-foreground">
                           {testimonials?.[currentIndex]?.title}
                         </p>
-                        <p className="font-arabic-sans text-xs text-muted-foreground flex items-center gap-1">
+                        <p className="  text-xs text-muted-foreground flex items-center gap-1">
                           <Icon name="MapPin" size={12} />
                           {testimonials?.[currentIndex]?.location}
                         </p>
@@ -191,11 +191,11 @@ const TestimonialsCarousel = () => {
                     <div className="bg-primary/10 rounded-lg p-4 border border-primary/20">
                       <div className="flex items-center gap-2 mb-2">
                         <Icon name="BookOpen" size={16} className="text-primary" />
-                        <span className="font-arabic-sans text-sm font-medium text-primary">
+                        <span className="  text-sm font-medium text-primary">
                           الكتاب المنشور
                         </span>
                       </div>
-                      <h5 className="font-arabic-sans font-semibold text-foreground">
+                      <h5 className="  font-semibold text-foreground">
                         {testimonials?.[currentIndex]?.bookTitle}
                       </h5>
                     </div>
@@ -208,11 +208,11 @@ const TestimonialsCarousel = () => {
                       <div className="bg-destructive/10 rounded-lg p-4 border border-destructive/20">
                         <div className="flex items-center gap-2 mb-2">
                           <Icon name="AlertCircle" size={16} className="text-destructive" />
-                          <span className="font-arabic-sans text-sm font-medium text-destructive">
+                          <span className="  text-sm font-medium text-destructive">
                             قبل التعامل معنا
                           </span>
                         </div>
-                        <p className="font-arabic-sans text-sm text-muted-foreground">
+                        <p className="  text-sm text-muted-foreground">
                           {testimonials?.[currentIndex]?.beforeAfter?.before}
                         </p>
                       </div>
@@ -220,11 +220,11 @@ const TestimonialsCarousel = () => {
                       <div className="bg-success/10 rounded-lg p-4 border border-success/20">
                         <div className="flex items-center gap-2 mb-2">
                           <Icon name="CheckCircle" size={16} className="text-success" />
-                          <span className="font-arabic-sans text-sm font-medium text-success">
+                          <span className="  text-sm font-medium text-success">
                             بعد التعامل معنا
                           </span>
                         </div>
-                        <p className="font-arabic-sans text-sm text-muted-foreground">
+                        <p className="  text-sm text-muted-foreground">
                           {testimonials?.[currentIndex]?.beforeAfter?.after}
                         </p>
                       </div>
@@ -232,13 +232,13 @@ const TestimonialsCarousel = () => {
 
                     {/* Results */}
                     <div className="bg-muted/50 rounded-lg p-4">
-                      <h6 className="font-arabic-sans font-semibold text-foreground mb-3 flex items-center gap-2">
+                      <h6 className="  font-semibold text-foreground mb-3 flex items-center gap-2">
                         <Icon name="TrendingUp" size={16} className="text-primary" />
                         النتائج المحققة
                       </h6>
                       <ul className="space-y-2">
                         {testimonials?.[currentIndex]?.results?.map((result, index) => (
-                          <li key={index} className="flex items-center gap-2 font-arabic-sans text-sm text-muted-foreground">
+                          <li key={index} className="flex items-center gap-2   text-sm text-muted-foreground">
                             <Icon name="Check" size={14} className="text-success" />
                             {result}
                           </li>
@@ -284,7 +284,7 @@ const TestimonialsCarousel = () => {
           <div className="flex items-center justify-center gap-2 mt-4">
             <button
               onClick={() => setIsAutoPlaying(!isAutoPlaying)}
-              className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors duration-300 font-arabic-sans"
+              className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors duration-300  "
             >
               <Icon name={isAutoPlaying ? "Pause" : "Play"} size={14} />
               {isAutoPlaying ? "إيقاف التشغيل التلقائي" : "تشغيل تلقائي"}
@@ -301,25 +301,25 @@ const TestimonialsCarousel = () => {
           className="mt-16 text-center"
         >
           <div className="bg-success/10 rounded-xl p-8 border border-success/20">
-            <h3 className="font-arabic-sans text-xl font-bold text-foreground mb-6">
+            <h3 className="  text-xl font-bold text-foreground mb-6">
               إحصائيات رضا العملاء
             </h3>
             <div className="grid md:grid-cols-4 gap-6">
               <div className="text-center">
                 <div className="text-3xl font-bold text-success mb-2">98%</div>
-                <p className="font-arabic-sans text-sm text-muted-foreground">معدل رضا العملاء</p>
+                <p className="  text-sm text-muted-foreground">معدل رضا العملاء</p>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-primary mb-2">300+</div>
-                <p className="font-arabic-sans text-sm text-muted-foreground">كتاب منشور بنجاح</p>
+                <p className="  text-sm text-muted-foreground">كتاب منشور بنجاح</p>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-secondary mb-2">15+</div>
-                <p className="font-arabic-sans text-sm text-muted-foreground">سنة من الخبرة</p>
+                <p className="  text-sm text-muted-foreground">سنة من الخبرة</p>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-accent mb-2">9</div>
-                <p className="font-arabic-sans text-sm text-muted-foreground">دول عربية نخدمها</p>
+                <p className="  text-sm text-muted-foreground">دول عربية نخدمها</p>
               </div>
             </div>
           </div>

@@ -40,6 +40,27 @@ export const useBookStore = create((set, get) => ({
           cover: image, 
           description: 'دليلك الشامل لإتقان فنون الإدارة المعاصرة' 
         },
+         { 
+          id: 3, 
+          title: 'فن الإدارة الحديثة', 
+          author: 'سارة أحمد', 
+          cover: image, 
+          description: 'دليلك الشامل لإتقان فنون الإدارة المعاصرة' 
+        },
+         { 
+          id: 4, 
+          title: 'فن الإدارة الحديثة', 
+          author: 'سارة أحمد', 
+          cover: image, 
+          description: 'دليلك الشامل لإتقان فنون الإدارة المعاصرة' 
+        },
+         { 
+          id: 5, 
+          title: 'فن الإدارة الحديثة', 
+          author: 'سارة أحمد', 
+          cover: image, 
+          description: 'دليلك الشامل لإتقان فنون الإدارة المعاصرة' 
+        },
         { 
           id: 3, 
           title: 'تاريخ الحضارة العربية', 

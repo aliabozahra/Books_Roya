@@ -24,10 +24,10 @@ const Header = () => {
               <Icon name="BookOpen" size={24} color="white" />
             </div>
             <div className="flex flex-col">
-              <span className="font-arabic-sans font-bold text-lg text-foreground leading-tight">
+              <span className="  font-bold text-lg text-foreground leading-tight">
                 دار النشر العربية
               </span>
-              <span className="font-arabic-sans text-xs text-muted-foreground">
+              <span className="  text-xs text-muted-foreground">
                 Arabic Publishing House
               </span>
             </div>
@@ -37,31 +37,31 @@ const Header = () => {
           <nav className="hidden md:flex items-center space-x-8 rtl:space-x-reverse">
             <Link 
               to="/services" 
-              className="font-arabic-sans text-sm font-medium text-foreground hover:text-primary transition-smooth"
+              className="  text-sm font-medium text-foreground hover:text-primary transition-smooth"
             >
               خدماتنا
             </Link>
             <Link 
               to="/portfolio" 
-              className="font-arabic-sans text-sm font-medium text-foreground hover:text-primary transition-smooth"
+              className="  text-sm font-medium text-foreground hover:text-primary transition-smooth"
             >
               معرض الأعمال
             </Link>
             <Link 
               to="/about" 
-              className="font-arabic-sans text-sm font-medium text-foreground hover:text-primary transition-smooth"
+              className="  text-sm font-medium text-foreground hover:text-primary transition-smooth"
             >
               من نحن
             </Link>
             <Link 
               to="/testimonials" 
-              className="font-arabic-sans text-sm font-medium text-foreground hover:text-primary transition-smooth"
+              className="  text-sm font-medium text-foreground hover:text-primary transition-smooth"
             >
               آراء العملاء
             </Link>
             <Link 
               to="/contact" 
-              className="font-arabic-sans text-sm font-medium text-foreground hover:text-primary transition-smooth"
+              className="  text-sm font-medium text-foreground hover:text-primary transition-smooth"
             >
               تواصل معنا
             </Link>
@@ -73,7 +73,7 @@ const Header = () => {
               variant="outline" 
               size="sm"
               onClick={() => window.open('/portfolio-download', '_blank')}
-              className="font-arabic-sans"
+              className=" "
             >
               تحميل المعرض
             </Button>
@@ -81,7 +81,7 @@ const Header = () => {
               variant="default" 
               size="sm"
               onClick={() => window.open('/consultation-booking', '_blank')}
-              className="font-arabic-sans shadow-cta"
+              className="  shadow-cta"
             >
               احجز استشارة
             </Button>
@@ -105,35 +105,35 @@ const Header = () => {
               <Link
                 to="/services"
                 onClick={closeMobileMenu}
-                className="block px-3 py-2 rounded-md text-base font-medium font-arabic-sans text-foreground hover:text-primary hover:bg-muted transition-smooth"
+                className="block px-3 py-2 rounded-md text-base font-medium   text-foreground hover:text-primary hover:bg-muted transition-smooth"
               >
                 خدماتنا
               </Link>
               <Link
                 to="/portfolio"
                 onClick={closeMobileMenu}
-                className="block px-3 py-2 rounded-md text-base font-medium font-arabic-sans text-foreground hover:text-primary hover:bg-muted transition-smooth"
+                className="block px-3 py-2 rounded-md text-base font-medium   text-foreground hover:text-primary hover:bg-muted transition-smooth"
               >
                 معرض الأعمال
               </Link>
               <Link
                 to="/about"
                 onClick={closeMobileMenu}
-                className="block px-3 py-2 rounded-md text-base font-medium font-arabic-sans text-foreground hover:text-primary hover:bg-muted transition-smooth"
+                className="block px-3 py-2 rounded-md text-base font-medium   text-foreground hover:text-primary hover:bg-muted transition-smooth"
               >
                 من نحن
               </Link>
               <Link
                 to="/testimonials"
                 onClick={closeMobileMenu}
-                className="block px-3 py-2 rounded-md text-base font-medium font-arabic-sans text-foreground hover:text-primary hover:bg-muted transition-smooth"
+                className="block px-3 py-2 rounded-md text-base font-medium   text-foreground hover:text-primary hover:bg-muted transition-smooth"
               >
                 آراء العملاء
               </Link>
               <Link
                 to="/contact"
                 onClick={closeMobileMenu}
-                className="block px-3 py-2 rounded-md text-base font-medium font-arabic-sans text-foreground hover:text-primary hover:bg-muted transition-smooth"
+                className="block px-3 py-2 rounded-md text-base font-medium   text-foreground hover:text-primary hover:bg-muted transition-smooth"
               >
                 تواصل معنا
               </Link>
@@ -148,7 +148,7 @@ const Header = () => {
                     window.open('/portfolio-download', '_blank');
                     closeMobileMenu();
                   }}
-                  className="font-arabic-sans"
+                  className=" "
                 >
                   تحميل المعرض
                 </Button>
@@ -160,7 +160,7 @@ const Header = () => {
                     window.open('/consultation-booking', '_blank');
                     closeMobileMenu();
                   }}
-                  className="font-arabic-sans shadow-cta"
+                  className="  shadow-cta"
                 >
                   احجز استشارة
                 </Button>

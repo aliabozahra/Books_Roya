@@ -24,7 +24,7 @@ const ArabicBookPublishingServiceLandingPage = () => {
   }, [fetchPortfolio, fetchTestimonials]);
 
   return (
-    <div dir="rtl" className="min-h-screen bg-background font-arabic-sans">
+    <div dir="rtl" className="min-h-screen bg-background  ">
       <Helmet>
         <title>خدمات نشر الكتب العربية - نحول أفكارك إلى كتب خالدة</title>
         <meta name="description" content="خدمات شاملة لنشر الكتب العربية للكتاب والمؤلفين. استشارة مجانية، تأليف، تحرير، تصميم وطباعة احترافية." />

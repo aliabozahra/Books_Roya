@@ -94,10 +94,10 @@ const WhyChooseUs = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="font-arabic-sans text-3xl md:text-4xl font-bold text-foreground mb-6">
+          <h2 className="  text-3xl md:text-4xl font-bold text-foreground mb-6">
             لماذا تختار دار النشر العربية؟
           </h2>
-          <p className="font-arabic-sans text-lg text-muted-foreground max-w-3xl mx-auto">
+          <p className="  text-lg text-muted-foreground max-w-3xl mx-auto">
             نتميز بخبرة واسعة وفريق متخصص يضمن لك تجربة نشر استثنائية تحقق أهدافك وتتجاوز توقعاتك
           </p>
         </motion.div>
@@ -119,12 +119,12 @@ const WhyChooseUs = () => {
                 </div>
 
                 {/* Title */}
-                <h3 className="font-arabic-sans text-xl font-bold text-foreground mb-4">
+                <h3 className="  text-xl font-bold text-foreground mb-4">
                   {benefit?.title}
                 </h3>
 
                 {/* Description */}
-                <p className="font-arabic-sans text-muted-foreground leading-relaxed mb-6">
+                <p className="  text-muted-foreground leading-relaxed mb-6">
                   {benefit?.description}
                 </p>
 
@@ -135,7 +135,7 @@ const WhyChooseUs = () => {
                       <div className={`w-5 h-5 bg-${benefit?.color}/20 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5`}>
                         <Icon name="Check" size={12} className={`text-${benefit?.color}`} />
                       </div>
-                      <span className="font-arabic-sans text-sm text-muted-foreground leading-relaxed">
+                      <span className="  text-sm text-muted-foreground leading-relaxed">
                         {detail}
                       </span>
                     </div>
@@ -158,7 +158,7 @@ const WhyChooseUs = () => {
           className="mt-20"
         >
           <div className="bg-card rounded-2xl p-8 shadow-lg border border-border">
-            <h3 className="font-arabic-sans text-2xl font-bold text-foreground text-center mb-12">
+            <h3 className="  text-2xl font-bold text-foreground text-center mb-12">
               مقارنة بين خدماتنا والنشر التقليدي
             </h3>
 
@@ -169,10 +169,10 @@ const WhyChooseUs = () => {
                   <div className="w-16 h-16 bg-destructive/10 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Icon name="X" size={32} className="text-destructive" />
                   </div>
-                  <h4 className="font-arabic-sans text-lg font-semibold text-destructive mb-2">
+                  <h4 className="  text-lg font-semibold text-destructive mb-2">
                     النشر التقليدي
                   </h4>
-                  <p className="font-arabic-sans text-sm text-muted-foreground">
+                  <p className="  text-sm text-muted-foreground">
                     الطريقة القديمة المعقدة
                   </p>
                 </div>
@@ -188,7 +188,7 @@ const WhyChooseUs = () => {
                   ]?.map((item, index) => (
                     <div key={index} className="flex items-center gap-3">
                       <Icon name="X" size={16} className="text-destructive flex-shrink-0" />
-                      <span className="font-arabic-sans text-sm text-muted-foreground">
+                      <span className="  text-sm text-muted-foreground">
                         {item}
                       </span>
                     </div>
@@ -202,10 +202,10 @@ const WhyChooseUs = () => {
                   <div className="w-16 h-16 bg-success/10 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Icon name="Check" size={32} className="text-success" />
                   </div>
-                  <h4 className="font-arabic-sans text-lg font-semibold text-success mb-2">
+                  <h4 className="  text-lg font-semibold text-success mb-2">
                     خدماتنا المتطورة
                   </h4>
-                  <p className="font-arabic-sans text-sm text-muted-foreground">
+                  <p className="  text-sm text-muted-foreground">
                     الحل الأمثل والأكثر احترافية
                   </p>
                 </div>
@@ -221,7 +221,7 @@ const WhyChooseUs = () => {
                   ]?.map((item, index) => (
                     <div key={index} className="flex items-center gap-3">
                       <Icon name="Check" size={16} className="text-success flex-shrink-0" />
-                      <span className="font-arabic-sans text-sm text-muted-foreground">
+                      <span className="  text-sm text-muted-foreground">
                         {item}
                       </span>
                     </div>
@@ -240,26 +240,26 @@ const WhyChooseUs = () => {
           viewport={{ once: true }}
           className="mt-16 text-center"
         >
-          <h3 className="font-arabic-sans text-xl font-bold text-foreground mb-8">
+          <h3 className="  text-xl font-bold text-foreground mb-8">
             معتمدون ومعترف بنا من قبل
           </h3>
           
           <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
             <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-lg border border-border">
               <Icon name="Award" size={20} className="text-primary" />
-              <span className="font-arabic-sans text-sm font-medium">اتحاد الناشرين العرب</span>
+              <span className="  text-sm font-medium">اتحاد الناشرين العرب</span>
             </div>
             <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-lg border border-border">
               <Icon name="BookOpen" size={20} className="text-secondary" />
-              <span className="font-arabic-sans text-sm font-medium">جمعية المؤلفين العرب</span>
+              <span className="  text-sm font-medium">جمعية المؤلفين العرب</span>
             </div>
             <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-lg border border-border">
               <Icon name="Shield" size={20} className="text-success" />
-              <span className="font-arabic-sans text-sm font-medium">ISO 9001:2015</span>
+              <span className="  text-sm font-medium">ISO 9001:2015</span>
             </div>
             <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-lg border border-border">
               <Icon name="Globe" size={20} className="text-accent" />
-              <span className="font-arabic-sans text-sm font-medium">معرض الكتاب العربي</span>
+              <span className="  text-sm font-medium">معرض الكتاب العربي</span>
             </div>
           </div>
         </motion.div>

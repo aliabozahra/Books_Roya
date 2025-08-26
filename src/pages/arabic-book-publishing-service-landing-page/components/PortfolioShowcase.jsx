@@ -112,10 +112,10 @@ const PortfolioShowcase = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="font-arabic-sans text-3xl md:text-4xl font-bold text-foreground mb-6">
+          <h2 className="  text-3xl md:text-4xl font-bold text-foreground mb-6">
             معرض أعمالنا المنشورة
           </h2>
-          <p className="font-arabic-sans text-lg text-muted-foreground max-w-3xl mx-auto">
+          <p className="  text-lg text-muted-foreground max-w-3xl mx-auto">
             اكتشف مجموعة من الكتب التي ساعدنا في نشرها وتحويلها من أفكار إلى منشورات احترافية
           </p>
         </motion.div>
@@ -132,7 +132,7 @@ const PortfolioShowcase = () => {
             <button
               key={category?.id}
               onClick={() => setActiveFilter(category?.id)}
-              className={`px-6 py-3 rounded-lg font-arabic-sans font-medium transition-all duration-300 ${
+              className={`px-6 py-3 rounded-lg   font-medium transition-all duration-300 ${
                 activeFilter === category?.id
                   ? 'bg-primary text-white shadow-cta'
                   : 'bg-card text-muted-foreground hover:bg-primary/10 hover:text-primary border border-border'
@@ -176,27 +176,27 @@ const PortfolioShowcase = () => {
                   </div>
 
                   {/* Year Badge */}
-                  <div className="absolute top-3 right-3 bg-primary text-white px-2 py-1 rounded-md text-xs font-arabic-sans font-medium">
+                  <div className="absolute top-3 right-3 bg-primary text-white px-2 py-1 rounded-md text-xs   font-medium">
                     {book?.year}
                   </div>
                 </div>
 
                 {/* Book Info */}
                 <div className="p-6">
-                  <h3 className="font-arabic-sans text-lg font-bold text-foreground mb-2 line-clamp-2 group-hover:text-primary transition-colors duration-300">
+                  <h3 className="  text-lg font-bold text-foreground mb-2 line-clamp-2 group-hover:text-primary transition-colors duration-300">
                     {book?.title}
                   </h3>
                   
-                  <p className="font-arabic-sans text-sm text-muted-foreground mb-3">
+                  <p className="  text-sm text-muted-foreground mb-3">
                     بقلم: {book?.author}
                   </p>
                   
-                  <p className="font-arabic-sans text-sm text-muted-foreground leading-relaxed mb-4 line-clamp-2">
+                  <p className="  text-sm text-muted-foreground leading-relaxed mb-4 line-clamp-2">
                     {book?.description}
                   </p>
 
                   {/* Book Details */}
-                  <div className="flex items-center justify-between text-xs text-muted-foreground font-arabic-sans">
+                  <div className="flex items-center justify-between text-xs text-muted-foreground  ">
                     <div className="flex items-center gap-1">
                       <Icon name="FileText" size={14} />
                       <span>{book?.pages} صفحة</span>
@@ -222,7 +222,7 @@ const PortfolioShowcase = () => {
         >
           <button
             onClick={() => window.open('/portfolio-full', '_blank')}
-            className="inline-flex items-center gap-3 bg-outline border-2 border-primary text-primary px-8 py-4 rounded-lg font-arabic-sans font-semibold hover:bg-primary hover:text-white transition-all duration-300"
+            className="inline-flex items-center gap-3 bg-outline border-2 border-primary text-primary px-8 py-4 rounded-lg   font-semibold hover:bg-primary hover:text-white transition-all duration-300"
           >
             <Icon name="Grid" size={20} />
             عرض جميع الأعمال
@@ -238,10 +238,10 @@ const PortfolioShowcase = () => {
           className="mt-16 bg-primary/10 rounded-xl p-8 border border-primary/20"
         >
           <div className="text-center mb-8">
-            <h3 className="font-arabic-sans text-2xl font-bold text-foreground mb-4">
+            <h3 className="  text-2xl font-bold text-foreground mb-4">
               قصص نجاح ملهمة
             </h3>
-            <p className="font-arabic-sans text-muted-foreground">
+            <p className="  text-muted-foreground">
               كتب حققت نجاحاً باهراً وأثرت في حياة آلاف القراء
             </p>
           </div>
@@ -251,10 +251,10 @@ const PortfolioShowcase = () => {
               <div className="w-16 h-16 bg-success/20 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Icon name="TrendingUp" size={32} className="text-success" />
               </div>
-              <h4 className="font-arabic-sans text-lg font-semibold text-foreground mb-2">
+              <h4 className="  text-lg font-semibold text-foreground mb-2">
                 أكثر من 50,000 نسخة مباعة
               </h4>
-              <p className="font-arabic-sans text-sm text-muted-foreground">
+              <p className="  text-sm text-muted-foreground">
                 من كتاب "فن القيادة في العصر الرقمي"
               </p>
             </div>
@@ -263,10 +263,10 @@ const PortfolioShowcase = () => {
               <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Icon name="Award" size={32} className="text-primary" />
               </div>
-              <h4 className="font-arabic-sans text-lg font-semibold text-foreground mb-2">
+              <h4 className="  text-lg font-semibold text-foreground mb-2">
                 جائزة أفضل كتاب عربي
               </h4>
-              <p className="font-arabic-sans text-sm text-muted-foreground">
+              <p className="  text-sm text-muted-foreground">
                 حصل عليها كتاب "رحلة في عالم الشعر العربي"
               </p>
             </div>
@@ -275,10 +275,10 @@ const PortfolioShowcase = () => {
               <div className="w-16 h-16 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Icon name="Globe" size={32} className="text-secondary" />
               </div>
-              <h4 className="font-arabic-sans text-lg font-semibold text-foreground mb-2">
+              <h4 className="  text-lg font-semibold text-foreground mb-2">
                 ترجم إلى 5 لغات
               </h4>
-              <p className="font-arabic-sans text-sm text-muted-foreground">
+              <p className="  text-sm text-muted-foreground">
                 كتاب "أسس البحث العلمي المعاصر"
               </p>
             </div>

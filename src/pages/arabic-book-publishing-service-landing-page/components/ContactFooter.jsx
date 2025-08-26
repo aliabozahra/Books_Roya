@@ -99,16 +99,16 @@ const ContactFooter = () => {
                 <Icon name="BookOpen" size={28} color="white" />
               </div>
               <div className="flex flex-col">
-                <span className="font-arabic-sans font-bold text-xl text-white leading-tight">
+                <span className="  font-bold text-xl text-white leading-tight">
                   دار النشر العربية
                 </span>
-                <span className="font-arabic-sans text-sm text-white/70">
+                <span className="  text-sm text-white/70">
                   Arabic Publishing House
                 </span>
               </div>
             </div>
 
-            <p className="font-arabic-sans text-white/80 leading-relaxed">
+            <p className="  text-white/80 leading-relaxed">
               نحول أفكارك إلى منشورات خالدة. خبرة 15+ سنة في نشر الكتب العربية مع فريق متخصص 
               يضمن لك جودة استثنائية وخدمة متميزة.
             </p>
@@ -117,11 +117,11 @@ const ContactFooter = () => {
             <div className="flex flex-wrap gap-4">
               <div className="flex items-center gap-2 bg-white/10 px-3 py-2 rounded-lg">
                 <Icon name="Award" size={16} className="text-primary" />
-                <span className="font-arabic-sans text-xs">معتمد من اتحاد الناشرين</span>
+                <span className="  text-xs">معتمد من اتحاد الناشرين</span>
               </div>
               <div className="flex items-center gap-2 bg-white/10 px-3 py-2 rounded-lg">
                 <Icon name="Shield" size={16} className="text-success" />
-                <span className="font-arabic-sans text-xs">ضمان الجودة 100%</span>
+                <span className="  text-xs">ضمان الجودة 100%</span>
               </div>
             </div>
           </motion.div>
@@ -133,7 +133,7 @@ const ContactFooter = () => {
             transition={{ duration: 0.8, delay: 0.1 }}
             viewport={{ once: true }}
           >
-            <h3 className="font-arabic-sans text-lg font-semibold text-white mb-6">
+            <h3 className="  text-lg font-semibold text-white mb-6">
               روابط سريعة
             </h3>
             <ul className="space-y-3">
@@ -141,7 +141,7 @@ const ContactFooter = () => {
                 <li key={index}>
                   <a
                     href={link?.href}
-                    className="font-arabic-sans text-white/70 hover:text-primary transition-colors duration-300 flex items-center gap-2 group"
+                    className="  text-white/70 hover:text-primary transition-colors duration-300 flex items-center gap-2 group"
                   >
                     <Icon name="ChevronLeft" size={14} className="group-hover:translate-x-1 transition-transform duration-300" />
                     {link?.name}
@@ -158,13 +158,13 @@ const ContactFooter = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <h3 className="font-arabic-sans text-lg font-semibold text-white mb-6">
+            <h3 className="  text-lg font-semibold text-white mb-6">
               خدماتنا
             </h3>
             <ul className="space-y-3">
               {services?.map((service, index) => (
                 <li key={index}>
-                  <div className="font-arabic-sans text-white/70 flex items-center gap-2">
+                  <div className="  text-white/70 flex items-center gap-2">
                     <Icon name="Check" size={14} className="text-primary" />
                     {service}
                   </div>
@@ -180,7 +180,7 @@ const ContactFooter = () => {
             transition={{ duration: 0.8, delay: 0.3 }}
             viewport={{ once: true }}
           >
-            <h3 className="font-arabic-sans text-lg font-semibold text-white mb-6">
+            <h3 className="  text-lg font-semibold text-white mb-6">
               تواصل معنا
             </h3>
             <div className="space-y-4">
@@ -194,11 +194,11 @@ const ContactFooter = () => {
                     <Icon name={contact?.icon} size={16} className="text-primary" />
                   </div>
                   <div>
-                    <h4 className="font-arabic-sans font-medium text-white text-sm mb-1">
+                    <h4 className="  font-medium text-white text-sm mb-1">
                       {contact?.title}
                     </h4>
                     {contact?.details?.map((detail, detailIndex) => (
-                      <p key={detailIndex} className="font-arabic-sans text-white/70 text-xs">
+                      <p key={detailIndex} className="  text-white/70 text-xs">
                         {detail}
                       </p>
                     ))}
@@ -209,7 +209,7 @@ const ContactFooter = () => {
 
             {/* Social Links */}
             <div className="mt-6">
-              <h4 className="font-arabic-sans font-medium text-white text-sm mb-3">
+              <h4 className="  font-medium text-white text-sm mb-3">
                 تابعنا على
               </h4>
               <div className="flex gap-3">
@@ -239,7 +239,7 @@ const ContactFooter = () => {
           className="mb-12"
         >
           <div className="bg-white/5 rounded-xl p-6 border border-white/10">
-            <h3 className="font-arabic-sans text-lg font-semibold text-white mb-4 flex items-center gap-2">
+            <h3 className="  text-lg font-semibold text-white mb-4 flex items-center gap-2">
               <Icon name="MapPin" size={20} className="text-primary" />
               موقعنا على الخريطة
             </h3>
@@ -266,7 +266,7 @@ const ContactFooter = () => {
           className="border-t border-white/20 pt-8"
         >
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="flex flex-col md:flex-row items-center gap-4 text-white/70 font-arabic-sans text-sm">
+            <div className="flex flex-col md:flex-row items-center gap-4 text-white/70   text-sm">
               <p>
                 © {currentYear} دار النشر العربية. جميع الحقوق محفوظة.
               </p>
@@ -286,11 +286,11 @@ const ContactFooter = () => {
             </div>
 
             <div className="flex items-center gap-4">
-              <div className="flex items-center gap-2 text-white/70 font-arabic-sans text-sm">
+              <div className="flex items-center gap-2 text-white/70   text-sm">
                 <Icon name="Globe" size={16} />
                 <span>نخدم 9 دول عربية</span>
               </div>
-              <div className="flex items-center gap-2 text-white/70 font-arabic-sans text-sm">
+              <div className="flex items-center gap-2 text-white/70   text-sm">
                 <Icon name="Clock" size={16} />
                 <span>دعم 24/7</span>
               </div>

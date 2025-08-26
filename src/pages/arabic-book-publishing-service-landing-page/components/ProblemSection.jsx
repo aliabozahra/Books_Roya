@@ -39,12 +39,12 @@ const ProblemSection = () => {
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <h2 className="font-arabic-sans text-3xl md:text-4xl font-bold text-foreground mb-6">
+              <h2 className="  text-3xl md:text-4xl font-bold text-foreground mb-6">
                 لماذا يفشل معظم المؤلفين في 
                 <span className="text-destructive block mt-2">النشر الذاتي؟</span>
               </h2>
               
-              <p className="font-arabic-sans text-lg text-muted-foreground leading-relaxed mb-8">
+              <p className="  text-lg text-muted-foreground leading-relaxed mb-8">
                 الكثير من المؤلفين الموهوبين يضيعون سنوات من العمل بسبب أخطاء يمكن تجنبها في عملية النشر. 
                 لا تدع كتابك يكون واحداً منها.
               </p>
@@ -65,10 +65,10 @@ const ProblemSection = () => {
                     <Icon name={problem?.icon} size={20} className="text-destructive" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="font-arabic-sans text-lg font-semibold text-foreground mb-2">
+                    <h3 className="  text-lg font-semibold text-foreground mb-2">
                       {problem?.title}
                     </h3>
-                    <p className="font-arabic-sans text-muted-foreground leading-relaxed">
+                    <p className="  text-muted-foreground leading-relaxed">
                       {problem?.description}
                     </p>
                   </div>
@@ -86,11 +86,11 @@ const ProblemSection = () => {
             >
               <div className="flex items-center gap-3 mb-3">
                 <Icon name="Lightbulb" size={24} className="text-primary" />
-                <h3 className="font-arabic-sans text-xl font-semibold text-foreground">
+                <h3 className="  text-xl font-semibold text-foreground">
                   الحل الأمثل
                 </h3>
               </div>
-              <p className="font-arabic-sans text-muted-foreground">
+              <p className="  text-muted-foreground">
                 دعنا نتولى كل هذه التحديات بينما تركز أنت على ما تجيده - الكتابة والإبداع.
               </p>
             </motion.div>
@@ -112,7 +112,7 @@ const ProblemSection = () => {
                     <div className="w-8 h-8 bg-destructive rounded-full flex items-center justify-center">
                       <Icon name="X" size={16} color="white" />
                     </div>
-                    <h3 className="font-arabic-sans text-lg font-semibold text-destructive">
+                    <h3 className="  text-lg font-semibold text-destructive">
                       النشر الذاتي التقليدي
                     </h3>
                   </div>
@@ -132,7 +132,7 @@ const ProblemSection = () => {
                     </div>
                   </div>
 
-                  <ul className="space-y-2 text-sm font-arabic-sans text-muted-foreground">
+                  <ul className="space-y-2 text-sm   text-muted-foreground">
                     <li className="flex items-center gap-2">
                       <Icon name="X" size={14} className="text-destructive" />
                       <span>تصميم غير احترافي</span>
@@ -163,7 +163,7 @@ const ProblemSection = () => {
                     <div className="w-8 h-8 bg-success rounded-full flex items-center justify-center">
                       <Icon name="Check" size={16} color="white" />
                     </div>
-                    <h3 className="font-arabic-sans text-lg font-semibold text-success">
+                    <h3 className="  text-lg font-semibold text-success">
                       النشر الاحترافي معنا
                     </h3>
                   </div>
@@ -183,7 +183,7 @@ const ProblemSection = () => {
                     </div>
                   </div>
 
-                  <ul className="space-y-2 text-sm font-arabic-sans text-muted-foreground">
+                  <ul className="space-y-2 text-sm   text-muted-foreground">
                     <li className="flex items-center gap-2">
                       <Icon name="Check" size={14} className="text-success" />
                       <span>تصميم احترافي مميز</span>

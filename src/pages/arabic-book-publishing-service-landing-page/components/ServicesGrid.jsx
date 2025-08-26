@@ -94,10 +94,10 @@ const ServicesGrid = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="font-arabic-sans text-3xl md:text-4xl font-bold text-foreground mb-6">
+          <h2 className="  text-3xl md:text-4xl font-bold text-foreground mb-6">
             خدماتنا الشاملة لنشر كتابك
           </h2>
-          <p className="font-arabic-sans text-lg text-muted-foreground max-w-3xl mx-auto">
+          <p className="  text-lg text-muted-foreground max-w-3xl mx-auto">
             نقدم لك حلولاً متكاملة تغطي جميع جوانب عملية النشر من الفكرة حتى وصول كتابك للقراء
           </p>
         </motion.div>
@@ -119,12 +119,12 @@ const ServicesGrid = () => {
                 </div>
 
                 {/* Title */}
-                <h3 className="font-arabic-sans text-xl font-bold text-foreground mb-4">
+                <h3 className="  text-xl font-bold text-foreground mb-4">
                   {service?.title}
                 </h3>
 
                 {/* Description */}
-                <p className="font-arabic-sans text-muted-foreground leading-relaxed mb-6">
+                <p className="  text-muted-foreground leading-relaxed mb-6">
                   {service?.description}
                 </p>
 
@@ -135,7 +135,7 @@ const ServicesGrid = () => {
                       <div className={`w-5 h-5 bg-${service?.color}/20 rounded-full flex items-center justify-center flex-shrink-0`}>
                         <Icon name="Check" size={12} className={`text-${service?.color}`} />
                       </div>
-                      <span className="font-arabic-sans text-sm text-muted-foreground">
+                      <span className="  text-sm text-muted-foreground">
                         {feature}
                       </span>
                     </div>
@@ -160,16 +160,16 @@ const ServicesGrid = () => {
           <div className="bg-success/10 rounded-xl p-8 border border-success/20">
             <div className="flex items-center justify-center gap-3 mb-4">
               <Icon name="Shield" size={32} className="text-success" />
-              <h3 className="font-arabic-sans text-2xl font-bold text-foreground">
+              <h3 className="  text-2xl font-bold text-foreground">
                 ضمان الجودة 100%
               </h3>
             </div>
-            <p className="font-arabic-sans text-muted-foreground max-w-2xl mx-auto mb-6">
+            <p className="  text-muted-foreground max-w-2xl mx-auto mb-6">
               نضمن لك جودة استثنائية في جميع مراحل العمل، وإذا لم تكن راضياً عن النتيجة، 
               نعيد لك أموالك كاملة دون أي أسئلة
             </p>
             
-            <div className="flex flex-wrap justify-center items-center gap-8 text-sm text-muted-foreground font-arabic-sans">
+            <div className="flex flex-wrap justify-center items-center gap-8 text-sm text-muted-foreground  ">
               <div className="flex items-center gap-2">
                 <Icon name="Clock" size={16} className="text-success" />
                 <span>التسليم في الوقت المحدد</span>

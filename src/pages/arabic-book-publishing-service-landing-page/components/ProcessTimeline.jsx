@@ -102,10 +102,10 @@ const ProcessTimeline = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="font-arabic-sans text-3xl md:text-4xl font-bold text-foreground mb-6">
+          <h2 className="  text-3xl md:text-4xl font-bold text-foreground mb-6">
             رحلة تحويل فكرتك إلى كتاب منشور
           </h2>
-          <p className="font-arabic-sans text-lg text-muted-foreground max-w-3xl mx-auto">
+          <p className="  text-lg text-muted-foreground max-w-3xl mx-auto">
             عملية منظمة ومدروسة من 6 مراحل تضمن لك الحصول على كتاب احترافي يليق بأفكارك ويحقق أهدافك
           </p>
         </motion.div>
@@ -150,7 +150,7 @@ const ProcessTimeline = () => {
                     {/* Content */}
                     <div className="flex-1">
                       <div className="flex items-center justify-between mb-2">
-                        <h3 className="font-arabic-sans text-lg font-semibold text-foreground">
+                        <h3 className="  text-lg font-semibold text-foreground">
                           {step?.title}
                         </h3>
                         <span className={`text-sm font-medium px-3 py-1 rounded-full ${
@@ -161,7 +161,7 @@ const ProcessTimeline = () => {
                           {step?.duration}
                         </span>
                       </div>
-                      <p className="font-arabic-sans text-muted-foreground text-sm leading-relaxed">
+                      <p className="  text-muted-foreground text-sm leading-relaxed">
                         {step?.description}
                       </p>
                     </div>
@@ -197,25 +197,25 @@ const ProcessTimeline = () => {
                   <Icon name={steps?.[activeStep]?.icon} size={24} className={`text-${steps?.[activeStep]?.color}`} />
                 </div>
                 <div>
-                  <h3 className="font-arabic-sans text-xl font-bold text-foreground">
+                  <h3 className="  text-xl font-bold text-foreground">
                     {steps?.[activeStep]?.title}
                   </h3>
-                  <p className="font-arabic-sans text-sm text-muted-foreground">
+                  <p className="  text-sm text-muted-foreground">
                     المدة المتوقعة: {steps?.[activeStep]?.duration}
                   </p>
                 </div>
               </div>
 
               <div className="space-y-4">
-                <p className="font-arabic-sans text-muted-foreground leading-relaxed">
+                <p className="  text-muted-foreground leading-relaxed">
                   {steps?.[activeStep]?.description}
                 </p>
                 
                 <div className="bg-muted/50 rounded-lg p-4">
-                  <h4 className="font-arabic-sans font-semibold text-foreground mb-3">
+                  <h4 className="  font-semibold text-foreground mb-3">
                     تفاصيل هذه المرحلة:
                   </h4>
-                  <div className="font-arabic-sans text-sm text-muted-foreground leading-relaxed whitespace-pre-line">
+                  <div className="  text-sm text-muted-foreground leading-relaxed whitespace-pre-line">
                     {steps?.[activeStep]?.details}
                   </div>
                 </div>
@@ -233,10 +233,10 @@ const ProcessTimeline = () => {
           className="text-center mt-16"
         >
           <div className="bg-primary/10 rounded-xl p-8 border border-primary/20">
-            <h3 className="font-arabic-sans text-2xl font-bold text-foreground mb-4">
+            <h3 className="  text-2xl font-bold text-foreground mb-4">
               جاهز لبدء رحلة نشر كتابك؟
             </h3>
-            <p className="font-arabic-sans text-muted-foreground mb-6 max-w-2xl mx-auto">
+            <p className="  text-muted-foreground mb-6 max-w-2xl mx-auto">
               احجز استشارتك المجانية الآن ودعنا نناقش مشروع كتابك ونضع خطة مخصصة لتحقيق أهدافك
             </p>
             <button
@@ -244,7 +244,7 @@ const ProcessTimeline = () => {
                 const message = encodeURIComponent("مرحباً، أرغب في حجز استشارة مجانية لمناقشة مشروع كتابي");
                 window.open(`https://wa.me/966501234567?text=${message}`, '_blank');
               }}
-              className="inline-flex items-center gap-3 bg-primary text-white px-8 py-4 rounded-lg font-arabic-sans font-semibold hover:bg-primary/90 transition-colors duration-300 shadow-cta"
+              className="inline-flex items-center gap-3 bg-primary text-white px-8 py-4 rounded-lg   font-semibold hover:bg-primary/90 transition-colors duration-300 shadow-cta"
             >
               <Icon name="MessageCircle" size={20} />
               احجز استشارتك المجانية الآن

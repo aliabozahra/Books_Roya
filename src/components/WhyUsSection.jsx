@@ -66,10 +66,10 @@ const WhyUsSection = () => {
           className="text-center mb-20"
           dir="rtl"
         >
-          <span className="text-primary font-bold text-3xl tracking-wide">
+          <span className=" font-bold text-3xl tracking-wide  text-orange-400">
             لماذا نحن؟
           </span>
-          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mt-3 mb-6 leading-snug">
+          <h2 className="text-3xl md:text-5xl font-bold  text-[#1a4e85] mt-3 mb-6 leading-snug">
             لأن كتابك يستحق التميز
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg md:text-xl leading-relaxed">
@@ -111,7 +111,24 @@ const WhyUsSection = () => {
           <motion.button
             whileHover={{ scale: 1.05 }}
             onClick={openmodal}
-            className="bg-[#f79433] text-white px-10 py-4 rounded-xl text-lg font-semibold shadow-md hover:bg-[#1a4e85] transition"
+            className="
+  bg-[#f79433] 
+  text-white 
+  px-14 py-4 
+  text-lg 
+  font-bold 
+  rounded-2xl 
+  shadow-lg 
+  transition-all 
+  duration-300 
+  ease-in-out 
+  hover:shadow-xl 
+  hover:-translate-y-1 
+  hover:bg-[#e88a2d] 
+  focus:ring-4 
+  focus:ring-[#f7b066] 
+  focus:outline-none
+"
           >
             اطلب الآن
           </motion.button>

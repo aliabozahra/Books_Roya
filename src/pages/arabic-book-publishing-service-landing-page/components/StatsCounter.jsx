@@ -103,10 +103,10 @@ const StatsCounter = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-12"
         >
-          <h2 className="font-arabic-sans text-3xl md:text-4xl font-bold text-foreground mb-4">
+          <h2 className="  text-3xl md:text-4xl font-bold text-foreground mb-4">
             أرقام تتحدث عن نفسها
           </h2>
-          <p className="font-arabic-sans text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="  text-lg text-muted-foreground max-w-2xl mx-auto">
             إنجازاتنا وخبرتنا في خدمة المؤلفين العرب حول العالم
           </p>
         </motion.div>
@@ -132,7 +132,7 @@ const StatsCounter = () => {
 
                 {/* Count */}
                 <div className="mb-4">
-                  <span className="font-arabic-sans text-4xl md:text-5xl font-bold text-foreground">
+                  <span className="  text-4xl md:text-5xl font-bold text-foreground">
                     {stat?.count}
                   </span>
                   <span className={`text-3xl md:text-4xl font-bold text-${stat?.color} ml-1`}>
@@ -141,12 +141,12 @@ const StatsCounter = () => {
                 </div>
 
                 {/* Label */}
-                <h3 className="font-arabic-sans text-xl font-semibold text-foreground mb-2">
+                <h3 className="  text-xl font-semibold text-foreground mb-2">
                   {stat?.label}
                 </h3>
 
                 {/* Description */}
-                <p className="font-arabic-sans text-sm text-muted-foreground">
+                <p className="  text-sm text-muted-foreground">
                   {stat?.description}
                 </p>
 
@@ -164,7 +164,7 @@ const StatsCounter = () => {
           transition={{ duration: 0.8, delay: 0.8 }}
           className="mt-16 text-center"
         >
-          <div className="flex flex-wrap justify-center items-center gap-8 text-sm text-muted-foreground font-arabic-sans">
+          <div className="flex flex-wrap justify-center items-center gap-8 text-sm text-muted-foreground  ">
             <div className="flex items-center gap-2">
               <Icon name="Shield" size={16} className="text-success" />
               <span>ضمان الجودة 100%</span>

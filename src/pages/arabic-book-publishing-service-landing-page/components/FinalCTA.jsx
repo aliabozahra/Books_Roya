@@ -98,16 +98,16 @@ const FinalCTA = () => {
           className="text-center mb-12"
         >
           {/* Urgency Badge */}
-          <div className="inline-flex items-center gap-2 bg-warning/20 text-warning px-4 py-2 rounded-full font-arabic-sans text-sm font-medium mb-6 border border-warning/30">
+          <div className="inline-flex items-center gap-2 bg-warning/20 text-warning px-4 py-2 rounded-full   text-sm font-medium mb-6 border border-warning/30">
             <Icon name="Clock" size={16} />
             <span>عرض محدود لفترة قصيرة</span>
           </div>
 
-          <h2 className="font-arabic-sans text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
+          <h2 className="  text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
             لا تدع فكرة كتابك تبقى مجرد حلم!
           </h2>
           
-          <p className="font-arabic-sans text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
+          <p className="  text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
             احجز استشارتك المجانية الآن واحصل على خصم حصري 25% على جميع خدمات النشر
           </p>
         </motion.div>
@@ -121,10 +121,10 @@ const FinalCTA = () => {
           className="bg-card rounded-2xl p-8 shadow-xl border border-border mb-12 max-w-4xl mx-auto"
         >
           <div className="text-center mb-8">
-            <h3 className="font-arabic-sans text-2xl font-bold text-foreground mb-2">
+            <h3 className="  text-2xl font-bold text-foreground mb-2">
               العرض ينتهي خلال:
             </h3>
-            <p className="font-arabic-sans text-muted-foreground">
+            <p className="  text-muted-foreground">
               لا تفوت هذه الفرصة الذهبية
             </p>
           </div>
@@ -142,7 +142,7 @@ const FinalCTA = () => {
                     {item?.value?.toString()?.padStart(2, '0')}
                   </div>
                 </div>
-                <div className="font-arabic-sans text-sm text-muted-foreground">
+                <div className="  text-sm text-muted-foreground">
                   {item?.label}
                 </div>
               </div>
@@ -164,10 +164,10 @@ const FinalCTA = () => {
                   <Icon name={benefit?.icon} size={20} className="text-success" />
                 </div>
                 <div>
-                  <h4 className="font-arabic-sans font-semibold text-foreground mb-1">
+                  <h4 className="  font-semibold text-foreground mb-1">
                     {benefit?.title}
                   </h4>
-                  <p className="font-arabic-sans text-sm text-muted-foreground">
+                  <p className="  text-sm text-muted-foreground">
                     {benefit?.description}
                   </p>
                 </div>
@@ -183,12 +183,12 @@ const FinalCTA = () => {
               onClick={handleWhatsAppConsultation}
               iconName="MessageCircle"
               iconPosition="right"
-              className="font-arabic-sans text-lg px-12 py-6 shadow-cta hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+              className="  text-lg px-12 py-6 shadow-cta hover:shadow-xl transition-all duration-300 transform hover:scale-105"
             >
               احجز استشارتك المجانية الآن واحصل على الخصم
             </Button>
             
-            <p className="font-arabic-sans text-sm text-muted-foreground mt-4">
+            <p className="  text-sm text-muted-foreground mt-4">
               * العرض ساري لأول 50 عميل فقط
             </p>
           </div>
@@ -203,11 +203,11 @@ const FinalCTA = () => {
           className="text-center"
         >
           <div className="bg-card/50 backdrop-blur-sm rounded-xl p-6 border border-border/50">
-            <p className="font-arabic-sans text-muted-foreground mb-4">
+            <p className="  text-muted-foreground mb-4">
               انضم إلى أكثر من 300 مؤلف حققوا أحلامهم معنا
             </p>
             
-            <div className="flex flex-wrap justify-center items-center gap-8 text-sm text-muted-foreground font-arabic-sans">
+            <div className="flex flex-wrap justify-center items-center gap-8 text-sm text-muted-foreground  ">
               <div className="flex items-center gap-2">
                 <Icon name="Users" size={16} className="text-primary" />
                 <span>+300 مؤلف راضٍ</span>
@@ -239,11 +239,11 @@ const FinalCTA = () => {
           <div className="bg-success/10 rounded-xl p-6 border border-success/20 max-w-2xl mx-auto">
             <div className="flex items-center justify-center gap-3 mb-4">
               <Icon name="Shield" size={24} className="text-success" />
-              <h3 className="font-arabic-sans text-lg font-bold text-foreground">
+              <h3 className="  text-lg font-bold text-foreground">
                 ضمان استرداد المبلغ كاملاً
               </h3>
             </div>
-            <p className="font-arabic-sans text-muted-foreground">
+            <p className="  text-muted-foreground">
               إذا لم تكن راضياً عن جودة عملنا خلال أول 30 يوم، نعيد لك أموالك كاملة دون أي أسئلة
             </p>
           </div>
