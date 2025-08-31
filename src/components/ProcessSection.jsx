@@ -25,7 +25,7 @@ const ProcessSection = () => {
   const stepIcons = [FiBook, FiClock, FiGlobe, FiCheckCircle];
 
   return (
-    <section className="py-24 bg-gray-50" id="process">
+    <section className="py-24 bg-[#e9f6fc] " id="process">
       <div className="container mx-auto px-6 lg:px-10">
         {/* Section Header */}
         <motion.div

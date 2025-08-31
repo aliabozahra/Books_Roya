@@ -108,20 +108,20 @@ const PortfolioSection = () => {
             
             <div className="flex flex-col items-center">
               <img src={book} alt="كتب" className="w-14 h-14 mb-2" />
-              <div className="text-2xl font-bold text-[#217abe] mb-1">300+</div>
-              <div className="text-gray-900 font-bold ">كتاب منجز</div>
+              <div className="text-3xl font-bold text-[#217abe] mb-1">300+</div>
+              <div className="text-lg font-bold text-[#f7b066] ">كتاب منجز</div>
             </div>
 
             <div className="flex flex-col items-center">
               <img src={clock} alt="تخصصات" className="w-14 h-14 mb-2" />
-              <div className="text-2xl font-bold text-[#f79433] mb-1">15+</div>
-              <div className="text-gray-900 font-bold">تخصص مختلف</div>
+              <div className="text-3xl font-bold text-[#217abe] mb-1">15+</div>
+              <div className="text-lg font-bold text-[#f7b066]">تخصص مختلف</div>
             </div>
 
             <div className="flex flex-col items-center">
               <img src={globel} alt="دول" className="w-14 h-14 mb-2" />
-              <div className="text-2xl font-bold text-[#217abe] mb-1">9</div>
-              <div className="text-gray-900 font-bold">دول عربية</div>
+              <div className="text-3xl font-bold text-[#217abe] mb-1">9</div>
+              <div className="text-lg font-bold text-[#f7b066]">دول عربية</div>
             </div>
 
           </div>
@@ -156,10 +156,10 @@ const BookCard = ({ book }) => {
       transition={{ duration: 0.3 }}
       className="group h-full max-w-sm mx-auto"
     >
-      <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 h-full flex flex-col">
+      <div className="bg-white rounded-xl overflow-hidden shadow-md transition-all duration-300 h-full flex flex-col group-hover:shadow-xl group-hover:ring-2 group-hover:ring-[#f79433]/40">
         
         {/* Book Cover */}
-        <div className="relative overflow-hidden h-72 flex items-center justify-center bg-gradient-to-r from-[#f79433]/10 via-[#d65c32]/10 to-[#217abe]/10">
+        <div className="relative overflow-hidden h-72 flex items-center justify-center">
           {book?.cover ? (
             <img 
               src={book.cover} 
@@ -172,8 +172,11 @@ const BookCard = ({ book }) => {
             </div>
           )}
 
-          {/* Hover overlay */}
-          <div className="absolute inset-0 bg-gradient-to-r from-[#f79433] via-[#d65c32] to-[#217abe] opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex items-center justify-center">
+          {/* Hover gradient effect */}
+          <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500 bg-gradient-to-t from-[#f79433]/70 via-[#d65c32]/50 to-transparent" />
+
+          {/* Hover overlay button */}
+          <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-90 transition-opacity duration-300">
             <motion.a
               href={`https://www.google.com/search?q=${book?.title}`}
               target="_blank"
@@ -192,10 +195,6 @@ const BookCard = ({ book }) => {
         {/* Book Info */}
         <div className="p-4 flex-1 flex flex-col" dir="rtl">
           <h3 className="text-base font-bold text-gray-900 mb-1">{book?.title}</h3>
-          <div className="flex items-center text-gray-600 mb-2">
-            <FiUser className="w-4 h-4 ml-1" />
-            <span className="text-sm">{book?.author}</span>
-          </div>
           <p className="text-gray-600 text-sm leading-relaxed line-clamp-2">
             {book?.description}
           </p>
@@ -204,6 +203,9 @@ const BookCard = ({ book }) => {
     </motion.div>
   );
 };
+
+
+
 
 
 export default PortfolioSection;

@@ -4,7 +4,7 @@ import {
   FiMail, FiPhone, FiGlobe, FiMapPin, 
   FiFacebook, FiTwitter, FiInstagram, FiLinkedin 
 } from 'react-icons/fi';
-import logo from "./imges/logo_v1.png";
+import logo from "./imges/logo-new.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -48,11 +48,9 @@ const Footer = () => {
             <img 
               src={logo} 
               alt="Company Logo" 
-              className="h-16 w-auto mb-6"
+              className="h-40 w-auto mb-6"
             />
-            <p className="text-gray-300 text-base leading-relaxed text-center lg:text-right">
-            رؤية لخدمات التدريب -أعداد وتصميم الكتب العملية.
-            </p>
+            
           </motion.div>
 
           {/* Quick Links */}

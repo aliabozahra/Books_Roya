@@ -22,15 +22,15 @@ const TestimonialsSection = () => {
   }
 
   return (
-    <section className="py-20 bg-[#FCF3E7]" id="testimonials" dir="rtl">
+    <section className="py-20 bg-[#e9f6fc]" id="testimonials" dir="rtl">
       <div className="container mx-auto px-4">
         
         {/* العنوان العام */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#009CA6]">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#217abe]">
             تجارب واقعية .. نتائج ملموسة
           </h2>
-          <p className="text-gray-700 mt-2">تعرّف على آراء العملاء الذين وثقوا بنا</p>
+          <p className="text-gray-900 font-semibold mt-2">تعرّف على آراء العملاء الذين وثقوا بنا</p>
         </div>
 
         {loading ? (

@@ -101,6 +101,33 @@ export const useBookStore = create((set, get) => ({
           rating: 5,
           avatar: '/api/placeholder/80/80'
         }
+        ,
+        {
+          id: 4,
+          name: 'عمر التميمي',
+          role: 'رجل أعمال',
+          content: 'أنصح بشدة بالتعامل مع هذا الفريق. احترافية عالية والتزام بالمواعيد.',
+          rating: 5,
+          avatar: '/api/placeholder/80/80'
+        }
+        ,
+        {
+          id: 5,
+          name: 'عمر التميمي',
+          role: 'رجل أعمال',
+          content: 'أنصح بشدة بالتعامل مع هذا الفريق. احترافية عالية والتزام بالمواعيد.',
+          rating: 5,
+          avatar: '/api/placeholder/80/80'
+        }
+        ,
+        {
+          id: 6,
+          name: 'عمر التميمي',
+          role: 'رجل أعمال',
+          content: 'أنصح بشدة بالتعامل مع هذا الفريق. احترافية عالية والتزام بالمواعيد.',
+          rating: 5,
+          avatar: '/api/placeholder/80/80'
+        }
       ]
     });
     set({ loading: false });
