@@ -39,7 +39,7 @@ const Modal = () => {
             {/* الاسم */}
             <div className="flex flex-col">
               <label className="mb-1 font-bold text-gray-900 text-start">
-                الإسم<span className="text-red-500">*</span>
+                الاسم<span className="text-red-500">*</span>
               </label>
               <input
                 type="text"
@@ -77,19 +77,25 @@ const Modal = () => {
               <label className="mb-1 font-bold text-gray-900 text-start">
                 الدولة<span className="text-red-500">*</span>
               </label>
-              <select className="w-full p-2.5 border border-gray-300 rounded-md focus:border-orange-400 focus:ring-1 focus:ring-orange-300 text-gray-700">
-                <option value="">اختر الدولة</option>
-                <option value="sa">المملكة العربية السعودية</option>
-                <option value="eg">مصر</option>
-                <option value="ae">الإمارات</option>
-                <option value="kw">الكويت</option>
-                <option value="qa">قطر</option>
-                <option value="bh">البحرين</option>
-                <option value="om">عُمان</option>
-                <option value="jo">الأردن</option>
-                <option value="ma">المغرب</option>
-                <option value="dz">الجزائر</option>
-              </select>
+              <div className="relative">
+                <select className="w-full p-2.5 pr-10 border border-gray-300 rounded-md focus:border-orange-400 focus:ring-1 focus:ring-orange-300 text-gray-700 appearance-none">
+                  <option value="">اختر الدولة</option>
+                  <option value="sa">المملكة العربية السعودية</option>
+                  <option value="eg">مصر</option>
+                  <option value="ae">الإمارات</option>
+                  <option value="kw">الكويت</option>
+                  <option value="qa">قطر</option>
+                  <option value="bh">البحرين</option>
+                  <option value="om">عُمان</option>
+                  <option value="jo">الأردن</option>
+                  <option value="ma">المغرب</option>
+                  <option value="dz">الجزائر</option>
+                </select>
+                {/* السهم */}
+                <span className="absolute inset-y-0 right-3 flex items-center pointer-events-none text-gray-500">
+                  ▼
+                </span>
+              </div>
             </div>
 
             {/* الخدمات */}
@@ -97,12 +103,18 @@ const Modal = () => {
               <label className="mb-1 font-bold text-gray-900 text-start">
                 اختار الخدمة<span className="text-red-500">*</span>
               </label>
-              <select className="w-full p-2.5 border border-gray-300 rounded-md focus:border-orange-400 focus:ring-1 focus:ring-orange-300 text-gray-700">
-                <option value="">اختر الخدمة</option>
-                <option>التأليف وصياغة الأفكار</option>
-                <option>التحرير والتدقيق اللغوي</option>
-                <option>التصميم والإخراج الفني</option>
-              </select>
+              <div className="relative">
+                <select className="w-full p-2.5 pr-10 border border-gray-300 rounded-md focus:border-orange-400 focus:ring-1 focus:ring-orange-300 text-gray-700 appearance-none">
+                  <option value="">اختر الخدمة</option>
+                  <option>تأليف كتاب</option>
+                  <option>التحرير والتدقيق اللغوي</option>
+                  <option>التصميم والإخراج الفني</option>
+                </select>
+                {/* السهم */}
+                <span className="absolute inset-y-0 right-3 flex items-center pointer-events-none text-gray-500">
+                  ▼
+                </span>
+              </div>
             </div>
 
             {/* زر الإرسال */}

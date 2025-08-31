@@ -1,6 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FiBook, FiClock, FiGlobe, FiCheckCircle } from "react-icons/fi";
+import { GrAssistListening, GrPlan } from "react-icons/gr";
+import { BsPencilFill, BsPaletteFill } from "react-icons/bs";
+import { MdContentPasteSearch } from "react-icons/md";
+import { FiCheckCircle } from "react-icons/fi";
 import { useBookStore, useModal } from "stores/useBookStore";
 
 const ProcessSection = () => {
@@ -21,8 +24,15 @@ const ProcessSection = () => {
     },
   };
 
-  // أيقونات لكل خطوة
-  const stepIcons = [FiBook, FiClock, FiGlobe, FiCheckCircle];
+  // أيقونات لكل خطوة بالترتيب الصحيح
+  const stepIcons = [
+    GrAssistListening,
+    GrPlan,
+    BsPencilFill,
+    MdContentPasteSearch,
+    BsPaletteFill,
+    FiCheckCircle,
+  ];
 
   return (
     <section className="py-24 bg-[#e9f6fc] " id="process">
@@ -69,7 +79,7 @@ const ProcessSection = () => {
                 {processSteps
                   ?.filter((_, i) => i % 2 === 0)
                   .map((step, i) => {
-                    const Icon = stepIcons[i % stepIcons.length];
+                    const Icon = stepIcons[i * 2]; // أيقونات الخطوات الفردية
                     const color = i % 2 === 0 ? "#217abe" : "#f79433";
                     return (
                       <motion.div
@@ -81,7 +91,7 @@ const ProcessSection = () => {
                         {/* الرقم */}
                         <motion.div
                           whileHover={{ scale: 1.1 }}
-                          className="w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-md"
+                          className="w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-2xl shadow-md"
                           style={{ backgroundColor: color }}
                         >
                           {step?.step}
@@ -109,7 +119,7 @@ const ProcessSection = () => {
                 {processSteps
                   ?.filter((_, i) => i % 2 === 1)
                   .map((step, i) => {
-                    const Icon = stepIcons[(i + 1) % stepIcons.length];
+                    const Icon = stepIcons[i * 2 + 1]; // أيقونات الخطوات الزوجية
                     const color = i % 2 === 0 ? "#f79433" : "#217abe";
                     return (
                       <motion.div
@@ -149,7 +159,7 @@ const ProcessSection = () => {
           {/* Mobile Layout */}
           <div className="lg:hidden space-y-8">
             {processSteps?.map((step, i) => {
-              const Icon = stepIcons[i % stepIcons.length];
+              const Icon = stepIcons[i]; // موبايل نفس الترتيب
               const color = i % 2 === 0 ? "#217abe" : "#f79433";
               return (
                 <motion.div

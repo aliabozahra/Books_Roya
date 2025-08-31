@@ -14,6 +14,12 @@ body {
   font-family: "Noto Kufi Arabic", sans-serif;
   margin: unset;
   /* background-color: black; */
+  select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: none; /* أمان إضافي */
+}
  
 
   

@@ -39,57 +39,57 @@ const TestimonialsSection = () => {
           </div>
         ) : (
           <Swiper
-            modules={[Navigation, Pagination, Autoplay]}
-            spaceBetween={30}
-            slidesPerView={1}
-            navigation
-            pagination={{ clickable: true }}
-            autoplay={{
-              delay: 4000,
-              disableOnInteraction: false,
-            }}
-            breakpoints={{
-              1024: { slidesPerView: 2 }, // بطاقتين في الديسكتوب
-            }}
-          >
-            {testimonials.map((testimonial) => (
-             <SwiperSlide key={testimonial?.id}>
-  <div className="flex items-center justify-center h-full">
-    <div className="bg-white rounded-xl shadow-md border border-gray-100 
-                    max-w-lg w-full p-8 md:py-12 flex flex-col justify-between">
-      
-      {/* الاسم + أيقونة الاقتباس */}
-      <div className="flex items-center justify-between mb-4">
-        <h3 className="font-bold text-lg text-gray-800 leading-snug">
-          {testimonial?.name}
-        </h3>
-        <FaQuoteRight className="text-[#f79433] text-3xl ml-2" />
-      </div>
+  modules={[Navigation, Pagination, Autoplay]}
+  spaceBetween={30}   // فعلياً هيشتغل بعد ما نشيل max-w-lg
+  slidesPerView={1}
+  navigation
+  pagination={{ clickable: true }}
+  autoplay={{
+    delay: 4000,
+    disableOnInteraction: false,
+  }}
+  breakpoints={{
+    1024: { slidesPerView: 2 }, // بطاقتين في الديسكتوب
+  }}
+>
+  {testimonials.map((testimonial) => (
+    <SwiperSlide key={testimonial?.id}>
+      <div className="flex items-center justify-center h-full px-2 md:px-14"> 
+        <div className="bg-white rounded-xl shadow-md border border-gray-100 
+                        w-full p-8 md:py-12 flex flex-col justify-between">
+          
+          {/* الاسم + أيقونة الاقتباس */}
+          <div className="flex items-center justify-between mb-4">
+            <h3 className="font-bold text-lg text-gray-800 leading-snug">
+              {testimonial?.name}
+            </h3>
+            <FaQuoteRight className="text-[#f79433] text-3xl ml-2" />
+          </div>
 
-      {/* الوظيفة */}
-      <p className="text-sm text-gray-500 mb-4">{testimonial?.role}</p>
+          {/* الوظيفة */}
+          <p className="text-sm text-gray-500 mb-4">{testimonial?.role}</p>
 
-      {/* النص */}
-      <p className="text-gray-700 leading-relaxed mb-4">
-        {testimonial?.content}
-      </p>
+          {/* النص */}
+          <p className="text-gray-700 leading-relaxed mb-4">
+            {testimonial?.content}
+          </p>
 
-      {/* خط فاصل */}
-      <div className="border-t-2 border-[#f79433] my-4 w-24"></div>
+          {/* خط فاصل */}
+          <div className="border-t-2 border-[#f79433] my-4 w-24"></div>
 
-      {/* الاسم + الصورة */}
-      <div className="flex items-center justify-end gap-3">
-        <div className="text-right">
-          <p className="font-bold text-md">{testimonial?.role}</p>
-          <p className="text-sm text-gray-600">{testimonial?.name}</p>
+          {/* الاسم + الصورة */}
+          <div className="flex items-center justify-end gap-3">
+            <div className="text-right">
+              <p className="font-bold text-md">{testimonial?.role}</p>
+              <p className="text-sm text-gray-600">{testimonial?.name}</p>
+            </div>
+          </div>
         </div>
-        
       </div>
-    </div>
-  </div>
-</SwiperSlide>
-            ))}
-          </Swiper>
+    </SwiperSlide>
+  ))}
+</Swiper>
+
         )}
       </div>
 

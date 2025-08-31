@@ -24,10 +24,10 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: FiFacebook, href: '#', label: 'Facebook' },
-    { icon: FiTwitter, href: '#', label: 'Twitter' },
-    { icon: FiInstagram, href: '#', label: 'Instagram' },
-    { icon: FiLinkedin, href: '#', label: 'LinkedIn' }
+    { icon: FiFacebook, href: 'https://www.facebook.com/roya4tp', label: 'Facebook' },
+    { icon: FiTwitter, href: 'https://twitter.com/roya4tp', label: 'Twitter' },
+    { icon: FiInstagram, href: 'https://www.instagram.com/roya4tp/', label: 'Instagram' },
+    { icon: FiLinkedin, href: 'https://www.linkedin.com/company/roya4tp', label: 'LinkedIn' }
   ];
 
   return (

@@ -39,8 +39,8 @@ const PortfolioSection = () => {
           className="text-center mb-14"
           dir="rtl"
         >
-          <span className="text-[#217abe] font-bold text-4xl">أعمالنا</span>
-          <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mt-2 mb-3">
+          <span className=" text-[#f7b066] font-bold text-4xl">أعمالنا</span>
+          <h2 className="text-2xl md:text-4xl font-bold text-[#217abe] mt-2 mb-3">
             كتب أنجزناها.. تتحدث عنا
           </h2>
           <p className="text-gray-600 text-base md:text-lg max-w-2xl mx-auto">

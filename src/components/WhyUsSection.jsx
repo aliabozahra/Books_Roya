@@ -69,7 +69,7 @@ const WhyUsSection = () => {
           <span className=" font-bold text-3xl tracking-wide  text-orange-400">
             لماذا نحن؟
           </span>
-          <h2 className="text-3xl md:text-5xl font-bold  text-[#1a4e85] mt-3 mb-6 leading-snug">
+          <h2 className="text-3xl md:text-5xl font-bold  text-[#217abe] mt-3 mb-6 leading-snug">
             لأن كتابك يستحق التميز
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg md:text-xl leading-relaxed">

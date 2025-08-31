@@ -46,8 +46,8 @@ const HeroSection = () => {
     <section className=" relative min-h-screen bg-gradient-to-br from-orange-50 via-white to-blue-50 overflow-hidden">
     
     {/* logoo */}
-<header className="w-full sticky top-0 from-orange-50 via-white to-blue-50 backdrop-blur-md shadow-sm z-50">
-  <div className="container mx-auto px-6 flex justify-between items-center h-20 relative">
+<header className="w-full sticky top-0 from-orange-50 via-white to-blue-50 backdrop-blur-md shadow-sm z-50 ">
+  <div className="container mx-auto px-6 flex justify-between items-center h-24 relative">
     
     {/* Logo  */}
     <a 
@@ -57,13 +57,12 @@ const HeroSection = () => {
       <img 
         src={logo} 
         alt="Logo" 
-        className="w-36 h-36 object-contain" 
+        className="w-44 h-44 object-contain" 
       />
     </a>
 
     {/* Desktop Menu */}  
-    <nav className="hidden md:flex flex-1 justify-center gap-10 text-gray-800 font-bold text-2xl">
-      <a href="#hero" className="hover:text-[#f79433] transition-colors duration-300">الرئيسية</a>
+    <nav className="hidden md:flex flex-1 justify-center gap-10 text-gray-800 font-bold text-xl">
       <a href="#why-us" className="hover:text-[#f79433] transition-colors duration-300">لماذا نحن؟</a>
       <a href="#services" className="hover:text-[#f79433] transition-colors duration-300">خدماتنا</a>
       <a href="#portfolio" className="hover:text-[#f79433] transition-colors duration-300">أعمالنا</a>
@@ -85,7 +84,6 @@ const HeroSection = () => {
   {open && (
     <div className="md:hidden bg-white shadow-md">
       <nav className="flex flex-col gap-6 p-6 text-gray-800 font-semibold text-lg">
-        <a href="#hero" onClick={() => setOpen(false)} className="hover:text-[#f79433]">الرئيسية</a>
         <a href="#why-us" onClick={() => setOpen(false)} className="hover:text-[#f79433]">لماذا نحن؟</a>
         <a href="#services" onClick={() => setOpen(false)} className="hover:text-[#f79433]">خدماتنا</a>
         <a href="#portfolio" onClick={() => setOpen(false)} className="hover:text-[#f79433]">أعمالنا</a>
@@ -169,7 +167,7 @@ const HeroSection = () => {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.4 }}
-        className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#217abe] mb-6 leading-tight"
+        className="text-4xl md:text-5xl lg:text-5xl font-bold text-[#217abe] mb-6 leading-tight"
       >
         نصنع كتبًا تُقرأ.. وتبقى
       </motion.h1>
@@ -304,7 +302,7 @@ const HeroSection = () => {
       src={bookk}
       alt="book icon"
       style={{ y, rotate, filter }}
-      className="absolute left-10 top-28 w-16 h-16 md:w-20 md:h-20"
+      className="absolute left-10 top-4 w-16 h-16 md:w-28 md:h-28"
       transition={{
         type: "spring",
         stiffness: 80,

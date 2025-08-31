@@ -18,7 +18,7 @@ const AboutSection = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="text-5xl md:text-6xl font-bold text-[#1a4e85] mb-10 "
+            className="text-5xl md:text-6xl font-bold text-[#217abe] mb-10 "
           >
             خدماتنا
           </motion.h2>
